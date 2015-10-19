@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  
   before_filter :authenticate_user!
   after_action :verify_authorized
 
@@ -10,6 +11,10 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     authorize @user
+    @hash = Gmaps4rails.build_markers(@races) do |race, marker|
+      marker.lat race.latitude
+      marker.lng race.longitude
+    end
   end
 
   def update

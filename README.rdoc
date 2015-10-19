@@ -1,28 +1,50 @@
-== README
+# Couchr
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+Are you an athlete who has a running coach and is looking for a way to communicate with your coach and see your training plan?
 
-* Ruby version
+Are you a running coach who is looking for a way to build training plans for your athletes? 
 
-* System dependencies
+Then Couchr is what you need.
 
-* Configuration
+A pun on the Couch25k training program, Couchr will help meet your training needs -- and have you finish that race.
 
-* Database creation
+## Screenshots
 
-* Database initialization
+...
 
-* How to run the test suite
+## Background
 
-* Services (job queues, cache servers, search engines, etc.)
+As someone who is both an athlete and a coach, I was looking for a simple app to use to meet my specific needs.
 
-* Deployment instructions
+Most users want to know how much to run and when, and what races to train for. Couchr will assist with just that.
 
-* ...
+## Features
 
+TDD -- testing most important parts of the app, with everexpanding test coverage.
+SMS integration
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Usage
+
+...
+
+## Development/Contribution
+
+Any suggestions on new features as well as code commentary are almost welcome. 
+
+## Future
+
+Todo:
+Add maps to user's races
+Add ability to see past workouts vs current workouts
+Add coach vs athlete authentication
+Add delayed jobs using gem 'delayed_job_active_record'
+
+## Author
+
+Anna Ershova
+
+## License
+
+Couchr is MIT Licensed. See LICENSE for details.

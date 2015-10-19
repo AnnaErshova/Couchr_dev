@@ -24,6 +24,24 @@
  @import "layouts/table";
  @import "layouts/body";
 
+/*.container {
+  padding-top: 100px
+}
+*/
+
+#welcome-message {
+  text-align: center;
+  font-size: 30px;
+  top-margin: 60px;
+  padding-top: 100px
+}
+
+#explanation-message {
+  text-align: center;
+  font-size: 30px;
+  top-margin: 10px;
+  padding-top: 60px
+}
 
 
 

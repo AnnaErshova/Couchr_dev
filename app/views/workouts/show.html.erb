@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @workout.name %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @workout.start_time %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @workout.description %>
+</p>
+
+<p>
+  <strong>User ID:</strong>
+  <%= @workout.user_id %>
+</p>
+
+<p>
+  <strong>User Name:</strong>
+  <%= @workout.user.name %>
+</p>
+
+<%= link_to 'Edit', edit_workout_path(@workout) %> |
+<%= link_to 'Back', workouts_path %>
+
+<% form_for @comment do |f| %>
+
+  <%= f.hidden_field :workout_id %>
+
+  <p>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+ 
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Post Comment" %>
+  </p>
+
+  <% end %>

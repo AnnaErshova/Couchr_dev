@@ -4,6 +4,6 @@ feature 'user visits homepage' do
 	scenario 'successfully' do
 		visit root_path
 
-		expect(page).to have_css 'h1', text: 'hello'
+		expect(page).to have_css 'h1', text: 'Welcome to Your Customized Training Plans!'
 	end
 end
